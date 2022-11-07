@@ -1,0 +1,120 @@
+body {
+    background-color: aqua;
+    animation-duration: 7s;
+    animation-name: ground;
+    animation: 8s infinite alternate ground;
+    border: 6px solid transparent;
+}
+
+@keyframes ground {
+    0% {
+        background-color: rgb(69, 165, 172);
+    }
+
+    50% {
+        background-color: rgb(59, 20, 167);
+    }
+
+    100% {
+        background-color: rgb(216, 53, 53);
+    }
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    animation-duration: 7s;
+    animation-name: move;
+    animation: 8s infinite alternate move;
+    border: 6px solid transparent;
+}
+
+@keyframes move {
+    0% {
+        margin-left: 85%;
+        background-color: red;
+    }
+
+    50% {
+        background-color: yellow;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    100% {
+        background-color: rgb(255, 176, 5);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+.rectangle {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    margin-top: 20px;
+    position: relative;
+    animation-name: center;
+    animation: 8s infinite alternate center;
+}
+
+@keyframes center {
+    0% {
+        height: 200px;
+        width: 200px;
+        background-color: #006eff;
+    }
+
+    50% {
+        background-color: #00e1ff;
+        height: 200px;
+        width: 200px;
+    }
+
+    100% {
+        background-color: #00eeff;
+        height: 200px;
+        width: 400px;
+    }
+}
+
+.circle {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-top: 20px;
+    position: absolute;
+    animation-duration: 7s;
+    animation-name: bottom;
+    animation: 8s infinite alternate bottom;
+    border: 6px solid transparent;
+
+}
+
+@keyframes bottom {
+    0% {
+        margin-left: 85%;
+        width: 200px;
+        height: 200px;
+        background-color: #0400ff;
+        border-radius: 50%;
+    }
+
+    50% {
+        background-color: #ff00bf;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    100% {
+        background-color: #02ff2c;
+        width: 200px;
+        height: 200px;
+    }
+}
